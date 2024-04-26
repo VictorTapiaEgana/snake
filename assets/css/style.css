@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Arcade';
+    src: url('../fonts/ARCADE.TTF');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    height: 100vh;
+    font-family: Arcade;
+}
+
+#reglas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+    font-family: Arcade;
+    font-size: 25px;
+    
+}
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;       
+    width: 377px;        
+}
+
+.pared{
+    background-color: black;  
+}
+
+.camino{   
+    border: 1px rgba(31, 29, 29, 0.144) solid;
+}
+
+.verdeClaro{
+    background-color: rgb(144, 228, 144);
+}
+
+.verdeOscuro{
+    background-color: rgba(109, 192, 109, 0.753);
+}
+
+.snake{
+    background-color: red;    
+    border: 1px rgba(0, 0, 0, 0.589) solid;
+}
+
+.snake-head{
+    background-color: black;
+}
+
+.galleta{
+    background-color: brown;
+}
+
+.snake, .camino, .pared, .galleta, .snake-head{
+    width: 15px;
+    height: 15px;    
+}
+
+#score{
+    font-size: 40px;    
+}
